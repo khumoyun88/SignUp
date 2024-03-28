@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+@mixin display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    max-width: 1440px;
+    height: 100vh;
+    margin: auto;
+    @include display;
+    font-family: "Inter", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+div:first-child{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 3.2rem;
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    background-image: url(./img/Image\ Placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// >div:last-child{
+//     border: 1px solid green;
+// }
+
+.form{
+    // max-width: 45.6rem;
+    margin-inline: 4rem;
+    flex: 1;
+
+    h1{
+        font-family: "Poppins", sans-serif;
+        font-weight:500;
+        font-size:4rem;
+        line-height:4.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    div>input{
+        display: block;
+        width: 100%;
+        height: 4rem;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+
+    input:focus{
+        outline: none;
+
+    }
+
+    p, div>input{
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        color: #6C7275;
+        margin-bottom: 3.2rem;
+    }
+    // p:last-child > input{
+    //     display: inline;
+    // }
+
+
+    a{
+        font-weight: 700;
+        color: black;
+
+    }
+
+    p>input{
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    
+    }
+
+    button{
+        width: 100%;
+        background-color:black;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 1em;
+        border-radius: 0.8rem;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+    body{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        div:first-child{
+            margin-bottom: 3rem;
+            // background-image: url(./img/Paste\ image.png);
+        }
+
+        .form{
+            >p:last-child{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        flex-direction: column;
+        align-items: flex-start;
+        div:first-child{
+            background-image: url(./img/Paste\ image.png);
+        }
+
+    }
+    
+}
+
+
+
