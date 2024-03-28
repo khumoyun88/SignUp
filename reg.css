@@ -90,6 +90,7 @@ div:first-child {
   }
   body div:first-child {
     margin-bottom: 3rem;
+    padding-bottom: 50rem;
   }
   body .form > p:last-child {
     font-size: 1.2rem;
@@ -101,6 +102,14 @@ div:first-child {
     align-items: flex-start;
   }
   body div:first-child {
+    padding-bottom: 30rem;
     background-image: url(./img/Paste\ image.png);
+  }
+  body .form p {
+    font-size: 1.2rem;
+  }
+  body .form p input {
+    width: 1rem;
+    height: 1rem;
   }
 }/*# sourceMappingURL=reg.css.map */
